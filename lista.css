@@ -1,0 +1,102 @@
+.listaFunc {
+  /* display: grid; */
+  display: none;
+  grid-template-rows: 70px auto;
+  grid-template-areas:
+    "title"
+    "cont-lista";
+}
+
+.lista-func .title {
+  grid-area: title;
+}
+
+.container-lista {
+  background-color: rgb(163, 163, 157);
+  border-radius: 3px;
+  grid-area: cont-lista;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 70% 30%;
+  grid-template-areas:
+    "lista botoes"
+  ;
+}
+
+.lista {
+  grid-area: lista;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 50% 10% 35%;
+  grid-template-areas:
+    "nome id cargo";
+}
+
+#l-nome {
+  grid-area: nome;
+}
+
+#l-id {
+  grid-area: id;
+}
+
+#l-cargo {
+  grid-area: cargo;
+}
+
+.item {
+  height: 30px;
+}
+
+
+.buttons-lista {
+  grid-area: botoes;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  grid-template-areas:
+    "detalhes excluir";
+}
+
+#detalhes {
+  grid-area: detalhes;
+  background-color: rgb(156, 156, 187);
+}
+
+#excluir {
+  grid-area: excluir;
+  background-color: rgb(223, 118, 118);
+}
+
+.btn-sair {
+  margin-top: 50px;
+  width: 100px;
+  height: 40px;
+}
+
+.sair {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.lista .item {
+  border-radius: 3px;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  align-items: center;
+  padding-left: 3px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.buttons-lista button {
+  border-radius: 3px;
+  border: 1px solid black;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}

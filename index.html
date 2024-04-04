@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de funcionarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <section class="type-action">
+            <div class="title">
+                <h1>Controle de Empregados</h1>
+            </div>
+            <div class="cont-buttons">
+                <div id="cadastrar"><button>Cadastrar Funcionário</button></div>
+                <div id="btnLista"><button>Lista de Funcionário</button></div>
+            </div>
+        </section>
+
+        <section class="telaDeCadastro">
+            <form action="">
+                <div class="cont-dadosPessoais">
+                    <div class="title t-dp">
+                        <h1>Dados Pessoais</h1>
+                    </div>
+                    <div class="control c-nome">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome-input" required placeholder="Nome Completo">
+                    </div>
+
+
+                    <div class="control c-cpf">
+                        <label for="cpf">CPF</label>
+                        <input type="number" name="cpf" id="cpf-input" required placeholder="888.888.888-88">
+                    </div>
+                    <div class="control c-data">
+                        <label for="dataNasc">Data Nascimento</label>
+                        <input type="date" name="dataNasc" id="dataNasc-input" required>
+                    </div>
+                    <div class="control c-sexo">
+                        <label for="sexo">Sexo</label>
+                        <div class="control-radio">
+                            <input type="radio" name="sexo" id="masculino" checked>
+                            <label for="masculino">Mas.</label>
+                            <input type="radio" name="sexo" id="feminino">
+                            <label for="feminino">Fem.</label>
+                        </div>
+                    </div>
+
+                    <div class="control c-estadoC">
+                        <label for="estadoCivil">Estado Civil</label>
+                        <select name="estadoCivil" id="estadoCivil">
+                            <option value="">...</option>
+                            <option value="solteiro">solteiro</option>
+                            <option value="casado">casado</option>
+                            <option value="divorciado">divorciado</option>
+                            <option value="viuvo">viuvo</option>
+                        </select>
+                    </div>
+
+                    <div class="control c-renda">
+                        <label for="rendamensal">Renda Mensal</label>
+                        <input type="number" name="rendamensal" id="rendaMensal" required>
+                    </div>
+                    <div class="control c-cargo">
+                        <label for="cargo">Cargo</label>
+                        <select name="cargo" id="cargo">
+                            <option value="">...</option>
+                            <option value="administrativo">administrativo</option>
+                            <option value="juridico">juridico</option>
+                            <option value="comercial">comercial</option>
+                            <option value="marketing">marketing</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="cont-enderecos c-end">
+                    <div class="title t-end">
+                        <h1>Endereço</h1>
+                    </div>
+
+                    <div class="control c-logradouro">
+                        <label for="logradouro">Logradouro</label>
+                        <input type="text" name="logradouro" id="logradouro">
+                    </div>
+                    <div class="control c-numero">
+                        <label for="numero">Número</label>
+                        <input type="number" name="numero" id="numero">
+                    </div>
+                    <div class="control c-comple">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" name="complemento" id="complemento">
+                    </div>
+
+
+                    <div class="control c-estado">
+                        <label for="estado">Estado</label>
+                        <input type="text" name="estado" id="estado">
+                    </div>
+                    <div class="control c-cidade">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade">
+                    </div>
+
+
+                </div>
+                <div class="botao">
+                    <button id="salvar">Salvar</button>
+                    <button id="voltar">Voltar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="listaFunc">
+            <div class="title">
+                <h1>Lista de Funcionário</h1>
+            </div>
+            <div class="container-lista">
+                <div class="lista">
+                    <div class="item" id="l-nome">
+                        <span>FELIPE</span>
+                    </div>
+                    <div class="item" id="l-id">
+                        <span>01</span>
+                    </div>
+                    <div class="item" id="l-cargo">
+                        <span>DONO</span>
+                    </div>
+                </div>
+                <div class="buttons-lista">
+                    <button id="detalhes">Detalhes</button>
+                    <button id="excluir">Excluir</button>
+                </div>
+            </div>
+            <div class="btn-sair">
+                <button id="btnSair" class="sair">Sair</button>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
